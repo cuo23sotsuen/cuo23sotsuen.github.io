@@ -325,6 +325,15 @@ main {
 
 .solo-table tr:last-child td { border-bottom: none; }
 
+.solo-table tr.break td {
+	text-align: center;
+	background: #faf7ef;
+	color: var(--gold);
+	font-size: 0.85rem;
+	letter-spacing: 0.3em;
+	padding: 0.5em 1.2em;
+}
+
 .piece-card {
 	background: #fff;
 	border: 1px solid var(--line);
