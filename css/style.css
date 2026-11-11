@@ -108,7 +108,7 @@ small { font-size: 0.75em; color: #8a8378; }
 		linear-gradient(160deg, var(--navy-deep), var(--navy));
 	color: #f5f0e6;
 	text-align: center;
-	padding: 96px 24px 88px;
+	padding: 56px 24px 48px;
 }
 
 .hero-sub {
@@ -135,6 +135,9 @@ small { font-size: 0.75em; color: #8a8378; }
 	text-indent: 0.25em; /* 中央揃えのバランス調整 */
 	margin-bottom: 0.5em;
 }
+
+/* 「2026年度」「卒団演奏会」のかたまり単位でだけ折り返す */
+.hero-title span { display: inline-block; }
 
 .hero-date {
 	font-size: clamp(1.1rem, 3vw, 1.5rem);
@@ -370,48 +373,35 @@ main {
 /* =========================
    SNS
    ========================= */
-.sns-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 32px;
-	max-width: 560px;
-	margin: 0 auto;
+.sns-buttons {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 16px;
 }
 
-.sns-card {
-	display: block;
+.sns-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6em;
 	background: #fff;
 	border: 1px solid var(--line);
-	border-radius: 4px;
-	padding: 28px 24px;
-	text-align: center;
+	border-radius: 999px;
+	padding: 0.65em 1.6em;
 	text-decoration: none;
-	color: inherit;
+	color: var(--navy);
+	letter-spacing: 0.05em;
 	transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.sns-card:hover {
+.sns-btn:hover {
 	border-color: var(--gold);
 	box-shadow: 0 4px 16px rgba(51, 48, 44, 0.1);
 }
 
-.sns-name {
-	font-family: var(--latin);
-	font-size: 1.1rem;
-	letter-spacing: 0.15em;
-	color: var(--navy);
-	margin-bottom: 0.2em;
-}
-
-.sns-icon {
-	width: 48px;
-	margin: 0 auto 0.9em;
-}
-
-.sns-account {
-	color: var(--gold);
-	font-size: 0.95rem;
-	letter-spacing: 0.05em;
+.sns-btn img {
+	width: 22px;
+	height: 22px;
 }
 
 /* =========================
@@ -469,8 +459,6 @@ main {
 	.poster { max-width: 260px; margin: 0 auto; }
 
 	.update-list li { flex-direction: column; gap: 0; }
-
-	.sns-grid { grid-template-columns: 1fr; max-width: 280px; }
 
 	.solo-table { font-size: 0.85rem; }
 	.solo-table th, .solo-table td { padding: 0.7em 0.8em; }
