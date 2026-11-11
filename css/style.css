@@ -111,20 +111,11 @@ small { font-size: 0.75em; color: #8a8378; }
 	padding: 56px 24px 48px;
 }
 
-.hero-sub {
-	font-family: var(--latin);
-	font-style: italic;
-	font-size: 1.1rem;
-	letter-spacing: 0.3em;
-	color: var(--sakura);
-	margin-bottom: 0.6em;
-}
-
 .hero-org {
-	font-size: clamp(1rem, 2.8vw, 1.3rem);
-	letter-spacing: 0.35em;
-	text-indent: 0.35em;
-	color: #d8d2c4;
+	font-size: clamp(1.25rem, 3.6vw, 1.7rem);
+	letter-spacing: 0.3em;
+	text-indent: 0.3em;
+	color: #e9e3d5;
 	margin-bottom: 0.3em;
 }
 
@@ -208,15 +199,6 @@ main {
 	background: var(--gold);
 }
 
-.headline .en {
-	display: block;
-	font-family: var(--latin);
-	font-style: italic;
-	font-size: 0.8rem;
-	letter-spacing: 0.35em;
-	color: var(--gold);
-}
-
 .lead { margin-bottom: 1.4em; }
 
 /* =========================
@@ -272,16 +254,8 @@ main {
 }
 
 /* =========================
-   お知らせ・更新履歴
+   お知らせ
    ========================= */
-.news-box {
-	background: #fff;
-	border: 1px solid var(--line);
-	border-left: 3px solid var(--gold);
-	border-radius: 4px;
-	padding: 24px 28px;
-}
-
 .update-list li {
 	display: flex;
 	gap: 1.6em;
@@ -373,6 +347,16 @@ main {
 /* =========================
    SNS
    ========================= */
+.sns-group + .sns-group { margin-top: 1.6em; }
+
+.sns-group-label {
+	text-align: center;
+	font-size: 0.85rem;
+	letter-spacing: 0.25em;
+	color: var(--gold);
+	margin-bottom: 0.6em;
+}
+
 .sns-buttons {
 	display: flex;
 	justify-content: center;
