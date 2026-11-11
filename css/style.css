@@ -379,11 +379,20 @@ main {
 }
 
 .sns-card {
+	display: block;
 	background: #fff;
 	border: 1px solid var(--line);
 	border-radius: 4px;
 	padding: 28px 24px;
 	text-align: center;
+	text-decoration: none;
+	color: inherit;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.sns-card:hover {
+	border-color: var(--gold);
+	box-shadow: 0 4px 16px rgba(51, 48, 44, 0.1);
 }
 
 .sns-name {
@@ -391,12 +400,18 @@ main {
 	font-size: 1.1rem;
 	letter-spacing: 0.15em;
 	color: var(--navy);
-	margin-bottom: 0.8em;
+	margin-bottom: 0.2em;
 }
 
-.sns-qr {
-	width: 160px;
-	margin: 0 auto 1em;
+.sns-icon {
+	width: 48px;
+	margin: 0 auto 0.9em;
+}
+
+.sns-account {
+	color: var(--gold);
+	font-size: 0.95rem;
+	letter-spacing: 0.05em;
 }
 
 /* =========================
