@@ -206,7 +206,7 @@ main {
    ========================= */
 .concert-grid {
 	display: grid;
-	grid-template-columns: 1fr 280px;
+	grid-template-columns: 1fr;
 	gap: 40px;
 	align-items: start;
 }
@@ -248,8 +248,16 @@ main {
 	border-radius: 4px;
 }
 
+/* ポスター表・裏を横並びに表示 */
+.poster {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
 .poster a { display: block; }
-.poster a + a { margin-top: 20px; }
 
 .poster img {
 	border-radius: 4px;
@@ -443,7 +451,7 @@ main {
 		grid-template-columns: 1fr;
 	}
 
-	.poster { max-width: 260px; margin: 0 auto; }
+	.poster { gap: 12px; }
 
 	.update-list li { flex-direction: column; gap: 0; }
 
