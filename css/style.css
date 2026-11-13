@@ -248,6 +248,9 @@ main {
 	border-radius: 4px;
 }
 
+.poster a { display: block; }
+.poster a + a { margin-top: 20px; }
+
 .poster img {
 	border-radius: 4px;
 	box-shadow: 0 8px 24px rgba(51, 48, 44, 0.15);
